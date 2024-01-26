@@ -180,5 +180,5 @@ const jonas = {
     lastName: 'Schmedtmann',
     age: 2037 - 1991,
     job: 'teacher',
-    friends: ['Micheal', 'Peter', 'Steven']
+    friends: ['Micheal', 'Peter', 'Steven', 'Helen']
 };
