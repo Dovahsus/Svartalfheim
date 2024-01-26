@@ -166,4 +166,19 @@
 // friends.push(23);
 // console.log(friends.includes('Steven'));
 
- 
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven']
+];
+
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Micheal', 'Peter', 'Steven']
+};
