@@ -166,19 +166,109 @@
 // friends.push(23);
 // console.log(friends.includes('Steven'));
 
-const jonasArray = [
-    'Jonas',
-    'Schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven']
-];
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ];
 
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    age: 2037 - 1991,
-    job: 'teacher',
-    friends: ['Micheal', 'Peter', 'Steven', 'Helen']
-};
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     age: 2037 - 1991,
+//     job: 'teacher',
+//     friends: ['Micheal', 'Peter', 'Steven']
+// };
+// console.log(jonas)
+ 
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
+
+// const nameKey = 'Name';
+// console.log(jonas['first' + namekey]);
+// console.log(jonas['last'  + namekey]);
+
+// const intrestedIn = prompt('What do you want to know about jonas? Choose between firstName, lastName, age, job and friends');
+// console.log(jonas[intrestedIn]);
+
+// if(jonas[intrestedIn]){
+//     console.log(jonas[intrestedIn]);
+// } else{
+//     console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+// }
+
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasschmedtmann';
+// console.log(jonas);
+
+
+// //Challenge
+// console.log(`${jonas.firstName}  has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['Micheal', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
+
+    // calcAge: function(birthYear){ 
+    //     return 2037 - birthYear;   
+    // }
+    
+//     calcAge: function (){
+//         this.age = 2037 - this.birthYear;
+//         return 
+//     },
+//     getSummary: function(){
+//         return `${this.firstName} is a ${this.calcAge()} year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+//     }
+// };
+ 
+// // console.log(jonas.calcAge());
+// // console.log(jonas['calcAge'](1991));
+
+// console.log(jonas.age);
+
+// console.log(jonas.getSummary());
+
+
+// const mike = {
+//     fullName: 'Michael Essa',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function(){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+        
+//     }
+// };
+
+// const brian = {
+//     fullName: 'Brian Scotto',
+//     mass: 100,
+//     height: 1.85,
+//     calcBMI: function(){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi;
+        
+//     }
+// }
+
+// mike.calcBMI();
+// brian.calcBMI();
+
+// console.log(mike.bmi, brian.bmi);
+
+// if(mike.bmi > brian.bmi){
+//     console.log(`${mike.fullName}'s BMI (${mike.bmi}) is higher than ${brian.fullName}'s BMI (${brian.bmi})`)
+// }
+// else if (brian.bmi > mike.bmi){
+//         console.log(`${brian.fullName}'s BMI (${brian.bmi}) is higher than ${mike.fullName}'s BMI (${mike.bmi})`)
+// }
+
+
