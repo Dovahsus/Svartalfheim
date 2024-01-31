@@ -56,7 +56,6 @@
 // console.log(yearsToRetirement(1991, 'Jonas'));
 // console.log(yearsToRetirement(1980, 'Bob'));
 
-
 // function cutFruitPieces(fruit){
 //     return fruit*4;
 // }
@@ -72,7 +71,6 @@
 
 // fruitProcessor(2,3);
 
-
 // const calcAge = function(birthYear){
 //     return 2037 - birthYear;
 // }
@@ -84,21 +82,19 @@
 //  return retirement;
 //     } else {
 //         console.log(`${firstName} has already retired`);
-        
+
 //         return -1;
 //     }
-    
+
 //     // return `${firstName} retires in ${retirement} years`;
 // }
-
 
 // console.log(yearsToRetirement(1991, 'Jonas'));
 // console.log(yearsToRetirement(1980, 'Bob'));
 
-
 // function ageCalc(birthYear, firstName){
 //     const age4 = 2037 - birthYear;
-//     console.log(`${firstName} is 
+//     console.log(`${firstName} is
 //     ${age4} years old`);
 //     return age4;
 // }
@@ -174,7 +170,6 @@
 //     ['Michael', 'Peter', 'Steven']
 // ];
 
-
 // const jonas = {
 //     firstName: 'Jonas',
 //     lastName: 'Schmedtmann',
@@ -183,7 +178,7 @@
 //     friends: ['Micheal', 'Peter', 'Steven']
 // };
 // console.log(jonas)
- 
+
 // console.log(jonas.lastName);
 // console.log(jonas['lastName']);
 
@@ -204,7 +199,6 @@
 // jonas['twitter'] = '@jonasschmedtmann';
 // console.log(jonas);
 
-
 // //Challenge
 // console.log(`${jonas.firstName}  has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
 
@@ -216,26 +210,25 @@
 //     friends: ['Micheal', 'Peter', 'Steven'],
 //     hasDriversLicense: true,
 
-    // calcAge: function(birthYear){ 
-    //     return 2037 - birthYear;   
-    // }
-    
+// calcAge: function(birthYear){
+//     return 2037 - birthYear;
+// }
+
 //     calcAge: function (){
 //         this.age = 2037 - this.birthYear;
-//         return 
+//         return
 //     },
 //     getSummary: function(){
 //         return `${this.firstName} is a ${this.calcAge()} year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
 //     }
 // };
- 
+
 // // console.log(jonas.calcAge());
 // // console.log(jonas['calcAge'](1991));
 
 // console.log(jonas.age);
 
 // console.log(jonas.getSummary());
-
 
 // const mike = {
 //     fullName: 'Michael Essa',
@@ -244,7 +237,7 @@
 //     calcBMI: function(){
 //         this.bmi = this.mass / this.height ** 2;
 //         return this.bmi;
-        
+
 //     }
 // };
 
@@ -255,7 +248,7 @@
 //     calcBMI: function(){
 //         this.bmi = this.mass / this.height ** 2;
 //         return this.bmi;
-        
+
 //     }
 // }
 
@@ -274,7 +267,85 @@
 // console.log('Lifting weights repetition 1');
 
 // for loop keeps running while condition is true
-for (let rep = 1; rep <= 100; rep++){
-    console.log(`Lifting weights repetition ${rep}`);
 
+// const jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   1991,
+//   'teacher',
+//   ['Micheal', 'Peter', 'Steven'],
+//   true,
+// ];
+// const types = [];
+
+// for (let i = 0; i < jonas.length; i++) {
+//   // Reading from Jonas array
+//   console.log(jonas[i], typeof jonas[i]);
+
+//   // types[i] = typeof jonas[i];
+//   types.push(typeof jonas[i]);
+// }
+
+// console.log(types);
+
+// // [  test --]
+
+// const years = [1985, 1998, 1963, 2004, 2006];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2035 - years[i]);
+// }
+// console.log(ages);
+
+// // continue and break
+// console.log('--- ONLY STRINGS ---');
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] !== 'string') continue;
+
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+
+// console.log('--- BREAK WITH NUMBER ---');
+// for (let i = 0; i < jonas.length; i++) {
+//   if (typeof jonas[i] === 'number') break;
+
+//   console.log(jonas[i], typeof jonas[i]);
+// }
+
+// const jonas = [
+//   'Jonas',
+//   'Schmedtmann',
+//   1991,
+//   'teacher',
+//   ['Micheal', 'Peter', 'Steven'],
+// ];
+
+// for (let i = jonas.length - 1; i >= 0; i--) {
+//   console.log(i, jonas[i]);
+// }
+
+// for (let excerise = 1; excerise < 4; excerise++) {
+//   console.log(`------ Starting excercise ${excerise}`);
+//   for (let rep = 1; rep < 31; rep++) {
+//     console.log(`Lifting weights rep ${rep}`);
+//   }
+// }
+
+// for (let rep = 1; rep < 10; rep++) {
+//   console.log(`Lifting weights rep ${rep}`);
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  // console.log(`Lifting weights rep ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log(`6...loop is about to end...`);
 }
