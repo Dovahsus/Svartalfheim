@@ -1,3 +1,5 @@
+// This boutta be a whole lotta code
+
 // let js = "amazing"
 
 // console.log("Jonas");
@@ -19,7 +21,6 @@
 // console.log(typeof year);
 
 // console.log(typeof null);
-
 
 // let age = 19;
 // age = 21;
@@ -57,7 +58,6 @@
 // x--
 // x
 // console.log(x);
-
 
 // //Comparison operators
 // console.log(ageDubem > ageMurceilago);
@@ -105,7 +105,6 @@
 //     console.log(`You have ${yearsLest} years left before you can legally drive`);
 // }
 
-
 // Type conversion
 
 // const inputYear = '1991'
@@ -136,7 +135,6 @@
 
 // const age = 18;
 // if (age === 18) console.log('You are an adult!');
-
 
 // const favorite = Number(prompt("What's your favorite number?"));
 // console.log(favorite);
@@ -221,4 +219,3 @@
 // console.log(drink2);
 
 // console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
-

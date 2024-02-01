@@ -3,12 +3,8 @@
 let weightD = 65;
 let heightD = 1.79;
 
-
-let bmi = (weightD / (heightD ** 2));
+let bmi = weightD / heightD ** 2;
 console.log(bmi);
-
-
-
 
 // function compareBMI(m, j) {
 //     let bmiM = (m.weight / (m.height ** 2));
@@ -26,3 +22,4 @@ console.log(bmi);
 //     height: heightJ
 // })
 // );
+// Norse
