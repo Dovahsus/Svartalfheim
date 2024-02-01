@@ -1,9 +1,9 @@
-var bill = Number(prompt("Enter the bill"));
+var bill = Number(prompt('Enter the bill'));
 
 //tip depends on the bill
 
-if ((300 >= bill) && (bill >= 50)){
-var tip = bill * 0.15;
+if (300 >= bill && bill >= 50) {
+  var tip = bill * 0.15;
   console.log(`Tip is ${tip}`);
 } else {
   tip = bill * 0.2;
@@ -13,10 +13,9 @@ var tip = bill * 0.15;
 const total = bill + tip;
 console.log(`Total is ${total}`);
 
-
-const calcTip = function (bill){
+const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-}
+};
 
 const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
