@@ -325,8 +325,8 @@
 //   console.log(i, jonas[i]);
 // }
 
-// for (let excerise = 1; excerise < 4; excerise++) {
-//   console.log(`------ Starting excercise ${excerise}`);
+// for (let exe = 1; exe < 4; exe++) {
+//   console.log(`------ Starting excercise ${exe}`);
 //   for (let rep = 1; rep < 31; rep++) {
 //     console.log(`Lifting weights rep ${rep}`);
 //   }
