@@ -25,18 +25,44 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 
-  orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
+  orderDelivery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = '20:00',
+    address,
+  }) {
     console.log(
       `Order recieved ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
 };
 
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
+// copy array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+/*
+
+// Destructuring Objects
 restaurant.orderDelivery({
   time: '22:30',
   address: 'Avenue of the arts, penthouse',
   mainIndex: 2,
   starterIndex: 2,
+});
+
+restaurant.orderDelivery({
+  address: 'Avenue of the arts, penthouse',
+  starterIndex: 1,
 });
 
 const { names, openingHours, categories } = restaurant;
@@ -49,7 +75,7 @@ const {
 } = restaurant;
 console.log(restaurantName, hours, tags);
 
-// Defult Values
+// Default Values
 const { menu = [], starterMenu: starters = [] } = restaurant;
 console.log(menu, starters);
 
@@ -67,7 +93,7 @@ const {
 } = openingHours;
 console.log(open, close);
 
-/*
+
 const arr = [2, 3, 4];
 const a = arr[0];
 const b = arr[1];
