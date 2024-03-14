@@ -50,6 +50,10 @@ console.log(newMenu);
 // copy array
 const mainMenuCopy = [...restaurant.mainMenu];
 
+// join 2 arrayes
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
+
 /*
 
 // Destructuring Objects
