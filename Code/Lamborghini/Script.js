@@ -45,6 +45,29 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+
+console.log('----OR----');
+// Use ANY data type, return ANY data type, short-circuting
+console.log(3 || 'Jonas');
+console.log('' || 'Jonas');
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(undefined || 0 || '' || 'Hello' || 23 || null);
+
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log('----AND----');
+console.log(0 && 'Jonas');
+
+console.log('Hello' && null && 'Jonas');
+
+/*
 // 1) Destructuring
 // SPREAD, because on RIGHT side of =
 const arr = [1, 2, ...[3, 4]];
@@ -76,53 +99,55 @@ add(8, 2, 5, 3, 2, 1, 4);
 const x = [23, 5, 7];
 add(...x);
 
+restaurant.orderPizza('Peperoni', 'Sausage', 'Beef', 'Bacon');
 restaurant.orderPizza();
+
 // /////////////////////////////////////////////////////////////
-// // The Spread Operator (...)
-// const arr = [7, 8, 9];
-// const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
-// console.log(badNewArr);
+// The Spread Operator (...)
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
 
-// const newArr = [1, 2, ...arr];
-// console.log(newArr);
+const newArr = [1, 2, ...arr];
+console.log(newArr);
 
-// const newMenu = [...restaurant.mainMenu, 'Gnocci'];
-// console.log(newMenu);
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
 
-// // copy array
-// const mainMenuCopy = [...restaurant.mainMenu];
+// copy array
+const mainMenuCopy = [...restaurant.mainMenu];
 
-// // join 2 arrayes
-// const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
-// console.log(menu);
+// join 2 arrayes
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu);
 
-// // Iterables: arrays, strings, maps, sets. NOT objects
-// const str = 'Jonas';
-// const letters = [...str, ' ', 'S.'];
-// console.log(letters);
-// console.log(...str);
+// Iterables: arrays, strings, maps, sets. NOT objects
+const str = 'Jonas';
+const letters = [...str, ' ', 'S.'];
+console.log(letters);
+console.log(...str);
 
-// // Real world examples
-// const ingredients = [
-//   prompt("let's make pasta! ingredient 1?"),
-//   prompt('Ingredient 2?'),
-//   prompt('Ingredient 3?'),
-// ];
-// console.log(ingredients);
+// Real world examples
+const ingredients = [
+  prompt("let's make pasta! ingredient 1?"),
+  prompt('Ingredient 2?'),
+  prompt('Ingredient 3?'),
+];
+console.log(ingredients);
 
-// restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
-// restaurant.orderPasta(...ingredients);
+restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+restaurant.orderPasta(...ingredients);
 
-// // Objects
-// const newRestaurant = { foundedIn: 1963, ...restaurant, founder: 'Dovahkiin' };
-// console.log(newRestaurant);
+// Objects
+const newRestaurant = { foundedIn: 1963, ...restaurant, founder: 'Dovahkiin' };
+console.log(newRestaurant);
 
-// const restaurantCopy = { ...restaurant };
-// restaurantCopy = 'Ristorante Roma';
-// console.log(restaurantCopy.name);
-// console.log(restaurant.name);
+const restaurantCopy = { ...restaurant };
+restaurantCopy = 'Ristorante Roma';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
 
-/*
+ 
 
 // Destructuring Objects
 restaurant.orderDelivery({
