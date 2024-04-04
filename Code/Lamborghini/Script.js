@@ -67,6 +67,13 @@ console.log(0 && 'Jonas');
 
 console.log('Hello' && null && 'Jonas');
 
+// Practical example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+
 /*
 // 1) Destructuring
 // SPREAD, because on RIGHT side of =
