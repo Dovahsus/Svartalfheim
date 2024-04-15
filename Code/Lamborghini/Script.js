@@ -46,6 +46,29 @@ const restaurant = {
   },
 };
 
+const rest1 = {
+  name: 'Fogo De Chao',
+  numGuests: 20,
+};
+
+const rest2 = {
+  name: 'Sotovoche',
+  numGuests: 20,
+};
+
+/*
+// restaurants.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+// Nullish: null and undefined (NOT 0 or '')
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+
+///////////////////////////////////////////////////////
+// Short Circuting (&& and ||)
+
+
 console.log('----OR----');
 // Use ANY data type, return ANY data type, short-circuting
 console.log(3 || 'Jonas');
@@ -74,7 +97,8 @@ if (restaurant.orderPizza) {
 
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 
-/*
+
+
 // 1) Destructuring
 // SPREAD, because on RIGHT side of =
 const arr = [1, 2, ...[3, 4]];
