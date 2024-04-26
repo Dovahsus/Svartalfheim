@@ -32,7 +32,7 @@ const restaurant = {
     address,
   }) {
     console.log(
-      `Order recieved ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+      `Order received ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
   orderPasta: function (ing1, ing2, ing3) {
@@ -52,9 +52,22 @@ const rest1 = {
 };
 
 const rest2 = {
-  name: 'Sotovoche',
-  numGuests: 20,
+  name: 'Shaolin',
+  owner: 'Wu-Tang Clan',
 };
+
+// OR assignment operator
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest2.numGuests || 10;
+
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+// nullish assignment operator
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+console.log(rest1, rest2);
 
 /*
 // restaurants.numGuests = 0;
@@ -142,13 +155,13 @@ console.log(badNewArr);
 const newArr = [1, 2, ...arr];
 console.log(newArr);
 
-const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+const newMenu = [...restaurant.mainMenu, 'Gnocchi'];
 console.log(newMenu);
 
 // copy array
 const mainMenuCopy = [...restaurant.mainMenu];
 
-// join 2 arrayes
+// join 2 arrays
 const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
 console.log(menu);
 
